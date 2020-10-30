@@ -64,9 +64,13 @@ nav li a:hover {
     padding: 1rem;
     background-color: #00c2ff;
     color: #fff !important;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 10px;
     box-shadow:0 0 5px rgb(226, 223, 223);
+}
+.highlights:hover {
+    background-color: #32e0c4;
 }
 
 
