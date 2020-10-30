@@ -10,8 +10,9 @@ body {
 .container {
     padding:1rem;
     margin: 0 auto;
-     max-width: 100%;
-     width: 1000px;
+    max-width: 100%;
+    width: 1300px;
+    
 }
 header{
     background-image: url("car.jpg");
@@ -47,10 +48,14 @@ nav ul{
     padding: 0;
 }
 nav li a {
-    padding: 1rem;
+    padding: 1.5rem;
     list-style-type: none;
     color: #fff;
     text-decoration: none;
+}
+
+nav li a:hover {
+    color: #00c2ff;
 }
 .selected{
     font-weight: bold;
@@ -58,9 +63,13 @@ nav li a {
 .highlights {
     padding: 1rem;
     background-color: #00c2ff;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
+    border-radius: 10px;
+    box-shadow:0 0 5px rgb(226, 223, 223);
 }
+
+
 footer {
     background-color: #000;
     height: 100px;
