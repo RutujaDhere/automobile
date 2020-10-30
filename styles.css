@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    font-family: Roboto, Open Sans,  sans-serif;
+    margin: 0;
+}
+
+.container {
+    padding:1rem;
+    margin: 0 auto;
+     max-width: 100%;
+     width: 1000px;
+}
+header{
+    background-image: url("car.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height:calc(100vh - 102px);
+}
+.content{
+    margin: auto;
+    font-size: 1.5rem;
+    max-width: 100%;
+}
+.content h1{
+    color: #00c2ff;
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav .logo {
+    font-size: 2rem;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+nav li a {
+    padding: 1rem;
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+}
+.selected{
+    font-weight: bold;
+}
+.highlights {
+    padding: 1rem;
+    background-color: #00c2ff;
+    color: #fff;
+    text-decoration: none;
+}
+footer {
+    background-color: #000;
+    height: 100px;
+    color: #fff;
+    padding: 1rem;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+footer strong{
+    color: #00c2ff;
+
+}
+footer p {
+    margin: 0;
+    
+}
+
+
+@media screen and (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    nav .highlights {
+        display: none;
+    }
+    footer{
+        min-height:calc(50vh - 10px);
+    }
+    footer ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer li{
+        margin: 1rem;
+        text-align: center;
+    }
+}
